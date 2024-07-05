@@ -1,0 +1,393 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navbar */
+.header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffdd59;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #ffdd59;
+    transition: width 0.3s;
+    left: 0;
+    bottom: -5px;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    padding: 3rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: #ffdd59;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #ffca2c;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f7f7f7;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.features p {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+    margin: 1rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+    font-size: 2rem;
+    color: #6a11cb;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Portfolio Section */
+.portfolio {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio p {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.game {
+    text-align: center;
+    max-width: 300px;
+    margin: 1rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .game img {
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+        object-fit: cover;
+       
+    }
+    
+    
+    .game h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    
+    .game p {
+        font-size: 1rem;
+        color: #666;
+    }
+    
+    /* About Section */
+    .about {
+        text-align: center;
+        padding: 4rem 2rem;
+        background: #f7f7f7;
+    }
+    
+    .about h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .about p {
+        font-size: 1.25rem;
+        color: #666;
+    }
+    
+    /* Newsletter Section */
+    .newsletter {
+        text-align: center;
+        padding: 4rem 2rem;
+    }
+    
+    .newsletter h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .newsletter p {
+        font-size: 1.25rem;
+        color: #666;
+        margin-bottom: 2rem;
+    }
+    
+    .newsletter-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .newsletter-form input[type="email"] {
+        padding: 0.75rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+    }
+    
+    .newsletter-form button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border: none;
+        background: #ffdd59;
+        color: #333;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    
+    .newsletter-form button:hover {
+        background: #ffca2c;
+    }
+    
+    /* Contact Section */
+    .contact {
+        text-align: center;
+        padding: 4rem 2rem;
+        background: #f7f7f7;
+    }
+    
+    .contact h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact p {
+        font-size: 1.25rem;
+        color: #666;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 800px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-left,
+    .form-right {
+        flex: 1;
+        margin: 0 1rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+    }
+    
+    .contact-form button {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+        border: none;
+        background: #ffdd59;
+        color: #333;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    
+    .contact-form button:hover {
+        background: #ffca2c;
+    }
+    
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 1rem 0;
+        background: #333;
+        color: #fff;
+    }
+    
+    .footer p {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+
+.download-button:hover {
+    background: #ffca2c;
+}
+
+
+/* Game Card Animation */
+.game {
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade-in Animation for Sections */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.portfolio, .newsletter, .contact, .features {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Button Hover Animation */
+.download-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background: #ffdd59;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    text-decoration: none;
+   
+}
+
+.download-button:hover {
+    background: #ffca2c;
+    transform: translateY(-5px);
+}
+
+    
+    
+    
+    
+    
